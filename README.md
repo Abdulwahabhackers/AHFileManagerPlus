@@ -1,22 +1,52 @@
-This is a Kotlin Multiplatform project targeting Desktop (JVM).
+# AH File Manager Plus 🚀
 
-* [/shared](./shared/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./shared/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./shared/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./shared/src/jvmMain/kotlin)
-    folder is the appropriate location.
+<div align="center">
 
-### Running the apps
+**مدير ملفات احترافي لسطح المكتب**
 
-Use the run configurations provided by the run widget in your IDE's toolbar. You can also use these commands and options:
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-- Desktop app:
-  - Hot reload: `./gradlew :desktopApp:hotRun --auto`
-  - Standard run: `./gradlew :desktopApp:run`
+</div>
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## 📖 عن التطبيق
+
+مدير ملفات احترافي مستوحى من تطبيق **مدير الملفات +** للأندرويد، مصمم للكمبيوتر بواجهة عربية أنيقة.
+
+---
+
+## ✨ الميزات
+
+- 🗂️ تصفح احترافي (قائمة + شبكة)
+- 📊 تحليل التخزين بأشرطة ملوّنة
+- 🔍 بحث شامل (أسماء + محتوى)
+- ⭐ تصنيفات ذكية
+- 📦 ضغط/فك ZIP, 7z, TAR + AES-256
+- 👁️ معاينة داخل الأرشيف
+- 🖼️ عارضات مدمجة
+- 🎵 مشغل موسيقى كامل
+- 🎬 مشغل فيديو بتحكم كامل
+- ⚙️ قسم البرامج + نسخ احتياطي
+- 🖥️ قسم النظام + سلة المحذوفات
+- 🌓 وضع داكن/فاتح تلقائي
+
+---
+
+## 📥 التثبيت
+
+### الطريقة 1: نسخة جاهزة
+
+1. حمّل `AHFileManagerPlus-Setup-v1.0.0.exe` من [Releases](../../releases)
+2. شغّله
+3. Next → Next → Install
+4. اختر "Launch"
+
+### الطريقة 2: من الكود
+
+```bash
+git clone https://github.com/Abdulwahabhackers/AHFileManagerPlus.git
+cd AHFileManagerPlus
+gradlew.bat :desktopApp:createDistributable
